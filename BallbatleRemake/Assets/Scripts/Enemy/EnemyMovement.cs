@@ -15,20 +15,12 @@ public class EnemyMovement : MonoBehaviour
     private void Update()
     {
         MoveEnemyToThePlayer();
-        DestroyEnemyAbroad();
     }
+
     private void MoveEnemyToThePlayer()
     {
         Vector3 lookDirection = (_playerPosition.transform.position - transform.position).normalized;
 
         _rigidBodyEnemy.AddForce(lookDirection * _speedEnemy);
-    }
-
-    private void DestroyEnemyAbroad()
-    {
-        if (transform.position.y < -10)
-        {
-            Destroy(gameObject);
-        }
     }
 }
