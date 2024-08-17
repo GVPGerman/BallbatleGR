@@ -958,7 +958,6 @@ MonoBehaviour:
   - {fileID: 1883419025925809046, guid: ff36066376684544eaced4330a5287f6, type: 3}
   - {fileID: 3856875087139619464, guid: 2baf9c74b709af843976e04565469848, type: 3}
   _powerUp: {fileID: 6541467292753892527, guid: 9e7b438b2070d4f4c990a48e5089e00d, type: 3}
-  _isGame: 1
 --- !u!1 &1609781129
 GameObject:
   m_ObjectHideFlags: 0

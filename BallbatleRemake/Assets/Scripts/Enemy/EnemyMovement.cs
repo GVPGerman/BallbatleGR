@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovement : DeathZone
 {
     [SerializeField] private float _speedEnemy;
     private Rigidbody _rigidBodyEnemy;
@@ -14,7 +14,10 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
-        MoveEnemyToThePlayer();
+        if (_playerPosition != null)
+        {
+            MoveEnemyToThePlayer();
+        }
     }
 
     private void MoveEnemyToThePlayer()
