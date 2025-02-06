@@ -1,10 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
-public class SpawnerManager : DeathZone
+public class SpawnerManager : MonoBehaviour, IStateGame
 {
     [SerializeField] private GameObject[] _allEnemys;
     [SerializeField] private GameObject _powerUp;
+
+    public bool IsGame { get; set; }
 
     private float _rangeXPosition = 7;
     private float _rangeZPosition = 11;
@@ -21,9 +23,10 @@ public class SpawnerManager : DeathZone
 
     private IEnumerator EnemyCountDownRoutine()
     {
-        if (isGame == true)
+        if (IsGame == true)
         {
             yield return new WaitForSeconds(_spawnDelay);
+
             SpawnEnemy(_wafeEnemy++);
             SpawnPowerUp();
             _spawnDelay += 2;

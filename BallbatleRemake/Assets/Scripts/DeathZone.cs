@@ -1,14 +1,16 @@
 using UnityEngine;
 
-public class DeathZone : MonoBehaviour
+public class DeathZone : MonoBehaviour, IStateGame
 {
-    protected bool isGame = true;
+    private readonly string _playerName = "Player";
+
+    public bool IsGame { get; set; }
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Player")
+        if (collision.gameObject.tag == _playerName)
         {
-            isGame = false;
+            IsGame = false;
         }
 
         Destroy(collision.gameObject);

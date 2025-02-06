@@ -1,17 +1,16 @@
 using UnityEngine;
 
-public class EnemyStrenght : MonoBehaviour
+public class EnemyStrenght : RepellingCharacter
 {
-    private float _strenghtEnemy = 7;
+    private readonly string _player = "Player";
+
+    [SerializeField, Range(1, 10)] private float _strenghtEnemy;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag(_player))
         {
-            Rigidbody enemyRigidBody = collision.gameObject.GetComponent<Rigidbody>();
-            Vector3 awayFromPlayer = collision.gameObject.transform.position - transform.position;
-
-            enemyRigidBody.AddForce(awayFromPlayer * _strenghtEnemy, ForceMode.Impulse);
+            Repelling(collision, _strenghtEnemy);
         }
     }
 }

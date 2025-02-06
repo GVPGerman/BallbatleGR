@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedEnemy: 1
+  _gravityScale: 5
 --- !u!114 &-2997377343437159863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +161,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f005dba7bb5ffb545af320f51183a5fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _strenghtEnemy: 1.86

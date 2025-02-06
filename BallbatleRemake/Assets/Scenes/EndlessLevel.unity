@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185118100}
   - component: {fileID: 185118102}
-  - component: {fileID: 185118101}
+  - component: {fileID: 185118103}
   m_Layer: 0
   m_Name: DeathZoneFlor
   m_TagString: Untagged
@@ -156,18 +156,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 696668887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &185118101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185118099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &185118102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -189,6 +177,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 50, y: 5, z: 40}
   m_Center: {x: 0, y: -10, z: 0}
+--- !u!114 &185118103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185118099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &497729023
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497729024}
   - component: {fileID: 497729026}
-  - component: {fileID: 497729025}
+  - component: {fileID: 497729027}
   m_Layer: 0
   m_Name: DeathZoneCeiling
   m_TagString: Untagged
@@ -222,18 +222,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 696668887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &497729025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 497729023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &497729026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -255,6 +243,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 50, y: 5, z: 40}
   m_Center: {x: 0, y: 20, z: 0}
+--- !u!114 &497729027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497729023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &650985635
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131140149}
   - component: {fileID: 1131140151}
-  - component: {fileID: 1131140150}
+  - component: {fileID: 1131140152}
   m_Layer: 0
   m_Name: DeathZoneWall (1)
   m_TagString: Untagged
@@ -557,18 +557,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 696668887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1131140150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131140148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1131140151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -590,6 +578,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 50, y: 40, z: 5}
   m_Center: {x: 0, y: 0, z: -20}
+--- !u!114 &1131140152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131140148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1217124350
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217124351}
   - component: {fileID: 1217124353}
-  - component: {fileID: 1217124352}
+  - component: {fileID: 1217124354}
   m_Layer: 0
   m_Name: DeathZoneWall (2)
   m_TagString: Untagged
@@ -623,18 +623,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 696668887}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1217124352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217124350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1217124353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -656,6 +644,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 50, y: 40, z: 5}
   m_Center: {x: 0, y: 0, z: -25}
+--- !u!114 &1217124354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217124350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1238101572
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedPlayer: 1.5
+  _gravityScale: 1
 --- !u!114 &1238101579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -816,6 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74cb05add5181f45baa9c323556b0a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _powerUpStrenght: 10
 --- !u!1 &1321123866 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a778a6fda04ac34cad6e18a97996e71, type: 3}
@@ -853,7 +855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1491086958}
   - component: {fileID: 1491086960}
-  - component: {fileID: 1491086959}
+  - component: {fileID: 1491086961}
   m_Layer: 0
   m_Name: DeathZoneWall
   m_TagString: Untagged
@@ -876,18 +878,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 696668887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1491086959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491086957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1491086960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -909,6 +899,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 50, y: 40, z: 5}
   m_Center: {x: 0, y: 0, z: 20}
+--- !u!114 &1491086961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491086957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1580093281
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1609781130}
   - component: {fileID: 1609781132}
-  - component: {fileID: 1609781131}
+  - component: {fileID: 1609781133}
   m_Layer: 0
   m_Name: DeathZoneWall (3)
   m_TagString: Untagged
@@ -991,18 +993,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 696668887}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1609781131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609781129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1609781132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1024,6 +1014,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 50, y: 40, z: 5}
   m_Center: {x: 0, y: 0, z: 25}
+--- !u!114 &1609781133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609781129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3bc4913cfdb7e4fb008f25678ab589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1658548921
 PrefabInstance:
   m_ObjectHideFlags: 0

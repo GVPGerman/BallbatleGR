@@ -1,14 +1,18 @@
 using System.Collections;
 using UnityEngine;
 
-public class PlayerPowerUp : MonoBehaviour
+public class PlayerPowerUp : RepellingCharacter
 {
-    private float _powerUpStrenght = 10;
+    private readonly string _powerupName = "Powerup";
+    private readonly string _enemyName = "Enemy";
+
+    [SerializeField, Range(1, 10)] private float _powerUpStrenght;
+
     private bool _isPowerUp = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Powerup"))
+        if (other.CompareTag(_powerupName))
         {
             _isPowerUp = true;
             Destroy(other.gameObject);
@@ -24,12 +28,9 @@ public class PlayerPowerUp : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") && _isPowerUp)
+        if (collision.gameObject.CompareTag(_enemyName) && _isPowerUp)
         {
-            Rigidbody enemyRB = collision.gameObject.GetComponent<Rigidbody>();
-            Vector3 awayFromPlayer = collision.gameObject.transform.position - transform.position;
-
-            enemyRB.AddForce(awayFromPlayer * _powerUpStrenght, ForceMode.Impulse);
+            Repelling(collision, _powerUpStrenght);
         }
     }
 }
